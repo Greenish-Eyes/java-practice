@@ -1,0 +1,139 @@
+﻿1. What is wrong with the following statement?
+Table myFavoritePlace = new Restaurant();
+There are two different types of classes. That will cause a syntax error.
+
+
+2. There are three parts to the following statement:
+Table tbl = new Table(4);
+Explain each of these parts below. Hint: it is similar to String str = new String(“Hi!”);
+a) Table tbl
+Declare a new variable.
+b) new Table(4);
+It sets default values for all the instance variables except the number of guests onto the new Int object.
+c) tbl = ... ; // what is being stored in tbl based upon the previous parts?
+In tbl is being stored the number of guests.
+
+
+3. Look through the documentation to determine what class contains the calcBill method. 
+The calcBill method is contained in the Table class.
+Explain two problems with the following statement.
+calcBill( );
+a)There is no class.
+b)There is no argument.
+
+
+4. Look through the documentation and locate the makeReservation method.
+a) What class is this method in?
+This method is in the Restaurant class.
+b) To call this method, what type of data (if any) does this method require as an argument?
+Integer (number of people).
+c) What type of data (if any) does the method return?
+Table
+
+
+5. Look through the documentation to locate the assignServer method.
+a) What class is this method in?
+This method is in the Restaurant class.
+b) To call this method, what type of data (if any) does this method require as an argument?
+Table
+c) What type of data (if any) does the method return?
+None (void).
+
+
+6. Locate the toString method in the Restaurant class.
+a) To call this method, what type of data (if any) does this method require as an argument?
+None.
+b) What type of data (if any) does the method return?
+String.
+
+
+7. What is the wording of the syntax error message?
+Type mismatch: cannot convert from Table to Restaurant.
+
+
+8. What do you think this error means?
+It means that classes should be the same.
+
+
+9. Is this the same type of error as the last syntax error? How do you know?
+Yes. We put the mouse on the red cross.
+
+
+10. What is the wording of the syntax error message?
+The method assignServer() is undefined for the type Table
+
+
+11. What do you think this error means?
+The method assignServer() is used for the type Restaurant, so we need to rewrite the assignment.
+
+
+12. For each of the following, specify the name of the method called to complete the action and the class that contains it.
+a) Which method specifies the amount of the bill? What class is it found in? 
+calcBill. It is found in the Table class.
+b) Which method specifies what the restaurant’s name? What class is it found in? setRestaurantName in the Restaurant class.
+c) Which method determines the tip amount? What class is it found in? 
+calcTip in the Table class.
+
+
+13. What type of data does the toString method in the Restaurant return? Does the toString method in the Table return the same type of data?
+toString returns a string. Yes they return the same type of data.
+
+
+14. The following statement will be executed in two stages. First it will execute the part in the
+parenthesis, then it will execute the println method.
+System.out.println(myFavoritePlace.toString());
+Explain what happens when each of these parts is executed.
+a) myFavoritePlace.toString()  
+returns a String with the values stored in myFavoritePlace.
+b) System.out.println(...);
+Output the values stored in myFavoritePlace.
+
+
+15. What type of data does this method return?
+Double
+
+
+16. Carefully review the output. You should note that table 3 does not have a server assigned.
+a) What method call is missing? 
+assignServer
+b) Determine where the method call should be placed and include it in your program now. (no
+answer is needed here)
+
+
+17. Locate the calcTotalCollected method.
+a) Which class is it located in?
+The Restaurant class.
+b) This method calls the determineTotalOwed method. What class is it located in?
+The Table class.
+c) How does the determineTotalOwed method work?
+It adds the tip amount to the bill amount to determine the total amount owed.
+
+
+18. Locate the calcTotalGuests method.
+a) Which class it is located in?
+The Restaurant class.
+b) This method calls the getNumGuests method. What class is it located in?
+The Table class
+c) What does the getNumGuests method do?
+It gets the value stored in the instance variable numGuests.
+
+
+19. Methods that provide a result contain a specific type of statement. Look at the methods written in the Restaurant.java and Table.java files that have a return type other than void. Each of these methods has a statement at the end of the method with a similar format.
+a) What keyword does the statement that gives back a value begin with?
+Return
+b) What appears after the keyword?
+There is a value that matches the method's return type.
+
+
+20. At the top of the Restaurant.java and Table.java files there are variables.
+a) What are these variables called?
+Instance variables
+b) What keyword appears before the data type?
+Private
+
+
+21. Several methods in the Restaurant.java and Table.java files start with either set or get. Based upon the documentation:
+a) What are the set methods known as? 
+Mutator methods
+b) What are the get methods known as?
+Accessor methods

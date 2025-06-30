@@ -1,0 +1,19 @@
+﻿Olena Fedochynska
+Prof. Postner 
+CSC 120 J1
+19 February 2025
+Planning Your Solution
+1. To find the course id what symbol should you find the location of? What method can you use to do this?
+To find the course id, I should find the location of “_”(space). To do this I will use the indexOf method.
+2. What method will allow you to extract the course id from the full string?
+The substring method will allow me to extract the course id from the full string.
+3. To separate the course number from the department and section, you will need to use the locations of the “-“.
+int secondHyphen = courseInfo.indexOf("-", posOfHyphen + 1);
+4.  The course name is at the end of the string. What symbol indicates that the course name will follow?
+The third hyphen.
+5.  How will you get the section? Can you use the method from either #3 or #4 to help you find where the section ends?
+I use one of the previous lines ( from question3):
+int secondHyphen = courseInfo.indexOf("-", posOfHyphen + 1);
+And write other lines to find section:
+int secondSpace = courseInfo.indexOf(" ", posOfSpace + 1);
+section = courseInfo.substring(secondHyphen + 1, secondSpace);

@@ -1,0 +1,15 @@
+7
+Pine St. Shelter
+150
+Walnut St. Shelter
+250
+Oak St. Shelter
+400
+Elm St. Shelter
+325
+Chestnut St. Shelter
+50
+Wellwood St. Shelter
+200
+Peanut St. Shelter
+300
